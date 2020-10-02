@@ -14,18 +14,17 @@ namespace CroomWeb.Controllers
 
     public class TempController : ApiController
     {
-
+        /// <summary>
+        /// Get all readings from Database
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<Readings> GetAllReads()
         {
-            DataConnection db = new DataConnection(@"Server=(localdb)\MSSQLLocalDB;");
             //get data from database.
-
-            var test = db.Read();
-
-
-            return db.Read();
+            return new DataConnection(@"Server=(localdb)\MSSQLLocalDB;").Read();
         }
 
+        //Method for later used.
         public IHttpActionResult GetReads(int id)
         {
 

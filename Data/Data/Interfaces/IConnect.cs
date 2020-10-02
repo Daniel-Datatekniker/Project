@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Data.Interfaces
 {
+    //Interface with connect and close
     interface IConnect
     {
         string Connect();

@@ -24,12 +24,13 @@ namespace Data.Database
             set { port = value; }
         }
 
-        //Constructor
+        //Constructor that requirre and connection string and port.
         public DefBase(string _connectionString, int _port)
         {
             connectionString = _connectionString;
             port = _port;
         }
+        //Constructor that only need a connectionstring
         public DefBase(string _connectionString)
         {
             connectionString = _connectionString;
